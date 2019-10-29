@@ -81,11 +81,10 @@ const FOOTERTMPLATE = `
 `
 // resolve argvs
 program.version('1.0.0')
-.option('-f, --file <value>', 'filename')
+.option('-f, --filename <value>', 'filename')
 .parse(process.argv)
 
 const filename = program.filename
-
 
 if (filename) {
   convertSingle(filename)
